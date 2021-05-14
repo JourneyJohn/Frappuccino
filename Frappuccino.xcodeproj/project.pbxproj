@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		528DE9D8264CE8D80003D331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528DE9D6264CE8D80003D331 /* Main.storyboard */; };
 		528DE9DA264CE8DB0003D331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528DE9D9264CE8DB0003D331 /* Assets.xcassets */; };
 		528DE9DD264CE8DB0003D331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528DE9DB264CE8DB0003D331 /* LaunchScreen.storyboard */; };
+		528DEB22264D25B10003D331 /* FrapArticalCollectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DEB21264D25B10003D331 /* FrapArticalCollectionListViewController.swift */; };
+		528DEB25264D2A290003D331 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 528DEB24264D2A290003D331 /* SnapKit */; };
+		528DEB27264D3BFE0003D331 /* FrapArticalCollectionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DEB26264D3BFE0003D331 /* FrapArticalCollectionListCell.swift */; };
+		528DEB29264D3CA90003D331 /* FrapProtocolCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DEB28264D3CA90003D331 /* FrapProtocolCluster.swift */; };
+		528DEB3E264E53AD0003D331 /* FrapBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DEB3D264E53AD0003D331 /* FrapBaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		528DE9D9264CE8DB0003D331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528DE9DC264CE8DB0003D331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528DE9DE264CE8DB0003D331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528DEB21264D25B10003D331 /* FrapArticalCollectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrapArticalCollectionListViewController.swift; sourceTree = "<group>"; };
+		528DEB26264D3BFE0003D331 /* FrapArticalCollectionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrapArticalCollectionListCell.swift; sourceTree = "<group>"; };
+		528DEB28264D3CA90003D331 /* FrapProtocolCluster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrapProtocolCluster.swift; sourceTree = "<group>"; };
+		528DEB3D264E53AD0003D331 /* FrapBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrapBaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528DEB25264D2A290003D331 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,10 @@
 				528DE9D9264CE8DB0003D331 /* Assets.xcassets */,
 				528DE9DB264CE8DB0003D331 /* LaunchScreen.storyboard */,
 				528DE9DE264CE8DB0003D331 /* Info.plist */,
+				528DEB21264D25B10003D331 /* FrapArticalCollectionListViewController.swift */,
+				528DEB26264D3BFE0003D331 /* FrapArticalCollectionListCell.swift */,
+				528DEB28264D3CA90003D331 /* FrapProtocolCluster.swift */,
+				528DEB3D264E53AD0003D331 /* FrapBaseNavigationController.swift */,
 			);
 			path = Frappuccino;
 			sourceTree = "<group>";
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = Frappuccino;
+			packageProductDependencies = (
+				528DEB24264D2A290003D331 /* SnapKit */,
+			);
 			productName = Frappuccino;
 			productReference = 528DE9CD264CE8D80003D331 /* Frappuccino.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 528DE9C4264CE8D80003D331;
+			packageReferences = (
+				528DEB23264D2A290003D331 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 528DE9CE264CE8D80003D331 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528DEB27264D3BFE0003D331 /* FrapArticalCollectionListCell.swift in Sources */,
+				528DEB22264D25B10003D331 /* FrapArticalCollectionListViewController.swift in Sources */,
 				528DE9D5264CE8D80003D331 /* ViewController.swift in Sources */,
 				528DE9D1264CE8D80003D331 /* AppDelegate.swift in Sources */,
 				528DE9D3264CE8D80003D331 /* SceneDelegate.swift in Sources */,
+				528DEB3E264E53AD0003D331 /* FrapBaseNavigationController.swift in Sources */,
+				528DEB29264D3CA90003D331 /* FrapProtocolCluster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		528DEB23264D2A290003D331 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		528DEB24264D2A290003D331 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 528DEB23264D2A290003D331 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 528DE9C5264CE8D80003D331 /* Project object */;
 }
